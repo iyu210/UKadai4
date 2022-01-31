@@ -10,13 +10,12 @@ import UIKit
 class ViewController: UIViewController {
     @IBOutlet weak private var label: UILabel!
     private var count = 0
-    override func viewDidLoad() {
-        super.viewDidLoad()
-    }
+
     @IBAction func plusButton(_ sender: Any) {
         count += 1
         label.text = "\(count)"
     }
+
     @IBAction func clearButton(_ sender: Any) {
         count = 0
         label.text = "\(count)"
